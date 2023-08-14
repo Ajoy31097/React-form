@@ -7,9 +7,9 @@ function App() {
 
 const [usersList, serUsersList] = useState([]);
 
-const addUserHandler = (uName, uAge) => {
+const addUserHandler = (uName, uAge, ucollegeName) => {
   serUsersList((prevUsersList) => {
-    return [...prevUsersList, {name: uName, age: uAge}];
+    return [...prevUsersList, {name: uName, age: uAge, collegeName: ucollegeName}];
   });
 };
 
